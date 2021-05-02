@@ -1,4 +1,4 @@
-import s from './styles.module.scss';
+import styles from './styles.module.scss';
 
 const Input = ({
 	size = 'lg',
@@ -7,11 +7,12 @@ const Input = ({
 	placeholder,
 	onChange,
 	dark = false,
+	className,
 }) => {
 	const cn = dark ? styles.dark : '';
 	return (
 		<input
-			className={`${s.customInput} ${s[size]} ${cn}`}
+			className={`${styles.customInput} ${styles[size]} ${cn} ${className}`}
 			type={type}
 			placeholder={placeholder}
 			onChange={onChange}

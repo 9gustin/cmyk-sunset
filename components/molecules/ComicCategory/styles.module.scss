@@ -1,0 +1,52 @@
+@import 'assets/styles/sizes.scss';
+
+.title {
+	display: flex;
+	align-items: center;
+	padding-left: 0.6em;
+	&:after {
+		content: '';
+		border-top: 2px solid;
+		margin: 0 2rem 0 0.4rem;
+		flex: 1 0 20px;
+		color: #303ac5;
+	}
+}
+
+.img {
+	cursor: pointer;
+	margin: 0.6em;
+	max-height: 360px;
+	max-width: 280px;
+	opacity: .7;
+	transition: all .2s;
+	width: 25%;
+
+	&:hover {
+		opacity: 1;
+		transform: scale(.95);
+	}
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.img {
+		width: 25%;
+		margin: 0.6em;
+		max-width: 280px;
+		max-height: 360px;
+	}
+}
+
+@media (max-width: $breakpoint-tablet) {
+	.img {
+		width: 27%;
+		margin: 0.6em;
+		max-width: 280px;
+		max-height: 360px;
+	}
+}
