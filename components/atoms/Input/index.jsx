@@ -7,7 +7,12 @@ const Input = ({
 	placeholder,
 	onChange,
 	dark = false,
+	required,
+	minLength,
+	maxLength,
+	pattern,
 	className,
+	value,
 	...rest
 }) => {
 	const cn = dark ? styles.dark : '';
@@ -18,6 +23,11 @@ const Input = ({
 			placeholder={placeholder}
 			onChange={onChange}
 			disabled={isDisabled}
+			required={required}
+			minLength={minLength}
+			maxLength={maxLength}
+			pattern={pattern}
+			value={value}
 			{...rest}
 		/>
 	);

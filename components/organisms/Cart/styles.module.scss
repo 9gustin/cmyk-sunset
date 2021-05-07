@@ -5,7 +5,7 @@
 .container{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    margin: 0 30px;
 }
 .title{
     width: fit-content;
@@ -23,7 +23,8 @@
 .price{
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    margin: 10px 0;
 }
 .buyItems{
     display: flex;
